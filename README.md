@@ -1,7 +1,8 @@
 # FlockSpeedtestBot
 Track your internet speed on Flock
 
-Step 1: Create an incoming webhook selecting the group where you wish to receive speedtest updates
+Step 1: Create an incoming webhook selecting the group where you wish to receive speedtest updates. 
+Note the <<incoming_webhook_url>>
 https://dev.flock.co/docs/create-incoming-webhook
 
 Step 2: Download the speedtest_cli script and add execute permission
@@ -13,7 +14,7 @@ Step 3: Download the master script and add execute permission
 >chmod +x PATH/speedtest.sh
 
 Step 4: Test the script by running manually
->PATH/speedtest.sh PATH_TO_CLI/speedtest_cli.py <incoming_webhook_url>
+>PATH/speedtest.sh PATH_TO_CLI/speedtest_cli.py <<incoming_webhook_url>>
 
 This should post speedtest result in the Flock group that you specified in incoming webhook.
 
@@ -24,11 +25,11 @@ crontab -e
 Eg:
 For every 5 minutes
 
-0,5 * * * * PATH/speedtest.sh PATH_TO_CLI/speedtest_cli.py <incoming_webhook_url>
+0,5 * * * * PATH/speedtest.sh PATH_TO_CLI/speedtest_cli.py <<incoming_webhook_url>>
 
 For every 30 minutes
 
-0,30 * * * * PATH/speedtest.sh PATH_TO_CLI/speedtest_cli.py <incoming_webhook_url>
+0,30 * * * * PATH/speedtest.sh PATH_TO_CLI/speedtest_cli.py <<incoming_webhook_url>>
 
 ALL SET. You should start recieving internet speed updates in the Flock group.
 Cheers!
