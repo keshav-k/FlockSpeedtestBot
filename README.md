@@ -19,6 +19,7 @@ This should post speedtest result in the Flock group that you specified in incom
 
 Step 5: Add cron to run this in regular intervals
 crontab -e
+
 Eg: For every 5 minutes
 0,5 * * * * PATH/speedtest.sh PATH_TO_CLI/speedtest_cli.py <incoming_webhook_url>
 
