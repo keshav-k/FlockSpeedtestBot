@@ -1,4 +1,4 @@
-# FlockSpeedtestBot
+# Flock Speedtest Bot
 Track your internet speed on Flock
 
 Step 1: Create an incoming webhook selecting the group where you wish to receive speedtest updates. 
