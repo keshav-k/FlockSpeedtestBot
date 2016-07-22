@@ -14,12 +14,16 @@ Step 3: Download the master script and add execute permission
 
 Step 4: Test the script by running manually
 >PATH/speedtest.sh PATH_TO_CLI/speedtest_cli.py <incoming_webhook_url>
-You should recieve speedtest result in the Flock group that you specified in incoming webhook.
+
+This should post speedtest result in the Flock group that you specified in incoming webhook.
 
 Step 5: Add cron to run this in regular intervals
 crontab -e
 Eg: For every minute
 * * * * * PATH/speedtest.sh PATH_TO_CLI/speedtest_cli.py <incoming_webhook_url>
+
+For every 30 minutes
+0,30 * * * * PATH/speedtest.sh PATH_TO_CLI/speedtest_cli.py <incoming_webhook_url>
 
 ALL SET. You should start recieving internet speed updates in the Flock group.
 Cheers!
