@@ -21,10 +21,13 @@ Step 5: Add cron to run this in regular intervals
 
 crontab -e
 
-Eg: For every 5 minutes
+Eg:
+For every 5 minutes
+
 0,5 * * * * PATH/speedtest.sh PATH_TO_CLI/speedtest_cli.py <incoming_webhook_url>
 
 For every 30 minutes
+
 0,30 * * * * PATH/speedtest.sh PATH_TO_CLI/speedtest_cli.py <incoming_webhook_url>
 
 ALL SET. You should start recieving internet speed updates in the Flock group.
