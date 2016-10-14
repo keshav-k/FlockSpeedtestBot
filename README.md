@@ -32,5 +32,5 @@ For every 30 minutes
 0,30 * * * * PATH/speedtest.sh [PATH_TO_CLI/speedtest_cli.py] [incoming_webhook_url]
 
 ALL SET. You should start recieving internet speed updates in the Flock group.
-Cheers!!
+Cheers!
 
